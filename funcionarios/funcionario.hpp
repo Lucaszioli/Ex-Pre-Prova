@@ -11,6 +11,9 @@ class Funcionario{
     public:
         Funcionario(std::string nome, int id): nome(nome), id(id){};
         virtual double calcularSalarioTotal() = 0;
+        std::string getNome(){
+            return nome;
+        }
 };
 
 double Funcionario::salarioBase = 1000;
